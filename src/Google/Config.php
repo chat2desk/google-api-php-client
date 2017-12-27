@@ -59,7 +59,7 @@ class Google_Config
           'request_timeout_seconds' => 100,
         ),
         'Google_IO_Curl' => array(
-          'disable_proxy_workaround' => false,
+          'disable_proxy_workaround' => !empty(\Yii::$app->params['proxy']),
           'options' => null,
         ),
         'Google_Logger_Abstract' => array(
